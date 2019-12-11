@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GmitProject"
+             x:Class="GmitProject.MainPage">
+
+    <Grid x:Name="mainGrid" Margin="5,5,5,5" 
+          HorizontalOptions="Center"
+          HeightRequest="300">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--date pickup-->
+
+
+
+
+        <!--<Grid x:Name="topGrid" Grid.Row="0" Grid.Column="0"> -->
+        <!-- For lable -->
+        <!-- <Label Text="Top grid is working."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            -->
+
+
+        <!-- add image-->
+        <!-- <Label Text="GMIT Student App"  FontSize="Large" HorizontalOptions="Center"></Label>
+            <Grid/>
+            -->
+
+
+        <!-- <Image WidthRequest="100" HeightRequest="100">
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="FileImageSource">
+                        <On Platform="UWP" Value="Images/Gmit.png"></On>
+                    </OnPlatform>
+                </Image.Source>
+            </Image> -->
+
+        <!-- </Grid>  -->
+
+        <!--   <Grid x:Name="second"  Grid.Row="1" Grid.Column="0"
+              HorizontalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition />
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid> -->
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Image Source="gmit.png" VerticalOptions="Start" HorizontalOptions="Start" />
+
+
+            <!--coding for bottom grid display for buttons -->
+            <DatePicker Format="D"  HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="LightPink" />
+        </Grid>
+
+        <Grid x:Name="bottomGrid" Grid.Row="1" Grid.Column="0"  HorizontalOptions="Center" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="1" Grid.Column="0"  Text="Accomodation" FontSize="Medium" Clicked="Button_Clicked" BackgroundColor="Blue"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="Food"    FontSize="Medium" Clicked="Button_Clicked_1" BackgroundColor="Red"/>
+            <Button Grid.Row="0" Grid.Column="0" Text="Transport"  FontSize="Medium" Clicked="Button_Clicked_2" BackgroundColor="Green"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Finance" FontSize="Medium" Clicked="Button_Clicked_3" BackgroundColor="Cornsilk"/>
+
+
+
+        </Grid>
+
+
+
+    </Grid>
+
+</ContentPage>

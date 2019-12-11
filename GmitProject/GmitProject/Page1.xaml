@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GmitProject.Page1">
+    <Grid x:Name="page1" Margin="5,5,5,5" HorizontalOptions="Center"
+          WidthRequest="400">
+        <!--Make rows and columns-->
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--pickup date method-->
+        <DatePicker Format="D"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10,0" BackgroundColor="Goldenrod" />
+
+        <Grid x:Name="topGrid" Grid.Row="0" Grid.Column="0">
+            <Label Text="Accomodation" FontSize="Large" HorizontalOptions="Center" ></Label>
+
+        </Grid>
+        <!--coding for bottom grid display for buttons 
+
+        <Grid x:Name="bottomGrid" Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        -->
+
+        <!--   <Button Grid.Row="0" Grid.Column="0" Text="NUI" FontSize="Medium"  Clicked="Button_Clicked" BackgroundColor="Beige"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Gmit" FontSize="Medium" Clicked="Button_Clicked_1" BackgroundColor="HotPink"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="Snoozles" FontSize="Medium" Clicked="Button_Clicked_2" BackgroundColor="NavajoWhite"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="Dunaras" FontSize="Medium" Clicked="Button_Clicked_3" BackgroundColor="Ivory"/>
+        
+        
+        </Grid> -->
+
+        <!-- <Grid x:Name="socend" Grid.Row="1" Grid.Column="0"
+              BackgroundColor="Blue">
+        </Grid> -->
+
+        <!--setup button with images-->
+        <ImageButton x:Name="gmit" BackgroundColor="Blue"  Source="gmit.png" HeightRequest="20"  WidthRequest="70"  
+                     Grid.Row="1" Grid.Column="0" Clicked="Gmit_Clicked"></ImageButton>
+
+        <ImageButton x:Name="west" BackgroundColor="HotPink" Source="west.png" HeightRequest="20"  WidthRequest="70" 
+                     Grid.Row="2" Grid.Column="0" Clicked="West_Clicked" ></ImageButton>
+
+        <ImageButton x:Name="snoozels" BackgroundColor="GreenYellow"  Source ="snooz.png" HeightRequest="20" 
+                     WidthRequest="50" Grid.Row="3" Grid.Column="0" Clicked="Snoozels_Clicked"></ImageButton>
+        <ImageButton x:Name="nui" BackgroundColor="DarkKhaki" Source="nui.png"  HeightRequest="20"  
+                     WidthRequest="70" Grid.Row="4" Grid.Column="0" Clicked="Nui_Clicked"></ImageButton>
+    </Grid>
+
+</ContentPage>

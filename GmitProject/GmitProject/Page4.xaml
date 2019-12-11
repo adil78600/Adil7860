@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GmitProject.Page4">
+
+    <Grid x:Name="page4" Margin="5,5,5,5" HorizontalOptions="Center"
+          WidthRequest="400">
+        <!--rows and clumns-->
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <!--pickup date method-->
+        <DatePicker Format="D"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10,0" BackgroundColor="Goldenrod" />
+
+        <!--label for text-->
+        <Grid x:Name="topGrid" Grid.Row="0" Grid.Column="0">
+            <Label Text="FINANCE" FontSize="Large" HorizontalOptions="Center" ></Label>
+
+        </Grid>
+        <!--image buttons-->
+        <ImageButton x:Name="aib" Grid.Row="1" Grid.Column="0" Source="aib.jpg" 
+                     Clicked="Aib_Clicked" BackgroundColor="DarkOrange"/>
+        <ImageButton></ImageButton>
+        <ImageButton x:Name="boi" Grid.Row="2" Grid.Column="0" Source="boi.png"
+                         Clicked="Boi_Clicked" BackgroundColor="Indigo"/>
+        <ImageButton></ImageButton>
+        <ImageButton x:Name="transferwise" Grid.Row="3" Grid.Column="0" Source="transferwise.png" 
+                     Clicked="Transferwise_Clicked" BackgroundColor="OliveDrab"/>
+        <ImageButton></ImageButton>
+        <ImageButton x:Name="westronunion" Grid.Row="4" Grid.Column="0" Source="westren.png"
+                     Clicked="Westronunion_Clicked" BackgroundColor="BlanchedAlmond"/>
+        <ImageButton></ImageButton>
+
+    </Grid>
+
+
+
+
+
+</ContentPage>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GmitProject.Page2">
+
+    <Grid x:Name="page2" Margin="5,5,5,5" HorizontalOptions="Center"
+            WidthRequest="400">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--pickup date method-->
+        <DatePicker Format="D" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10,0" BackgroundColor="DarkBlue" />
+
+        <Grid x:Name="topGrid" Grid.Row="0" Grid.Column="0">
+            <Label Text="FOOD" FontSize="Large" HorizontalOptions="Center" ></Label>
+            <Grid/>
+            <!-- For lable -->
+            <!-- <Label Text="Top grid is working."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            -->
+
+            <!-- add image-->
+            <Image WidthRequest="100" HeightRequest="100">
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="FileImageSource">
+                        <On Platform="UWP" Value="Images/Gmit.jpg"/>
+                    </OnPlatform>
+                </Image.Source>
+            </Image>
+        </Grid>
+
+
+        <!--coding for bottom grid display for buttons -->
+        <!--
+        <Grid x:Name="bottomGrid" Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+           
+-->
+        <ImageButton x:Name="supermaces" Grid.Row="1" Grid.Column="0" Source="supermacs.jpg" HeightRequest="20"  WidthRequest="70"
+                     BackgroundColor="DarkGreen" Clicked="Supermaces_Clicked" />
+      
+        <ImageButton x:Name="justeat" Grid.Row="2" Grid.Column="0"  Source="justeat.png" 
+        BackgroundColor="Lavender" Clicked="Justeat_Clicked" />
+   
+
+        <ImageButton x:Name="dominos" Grid.Row="3" Grid.Column="0" Clicked="Dominos_Clicked" Source="dominos.png" BackgroundColor="DarkCyan" />
+   
+        <ImageButton Grid.Row="4" Grid.Column="0"  Source="charcoal.png" Clicked="ImageButton_Clicked" 
+                     BackgroundColor="MediumSlateBlue"/>
+  
+
+
+
+
+
+    </Grid>
+
+</ContentPage>

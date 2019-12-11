@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GmitProject.Page3">
+
+    <Grid x:Name="page3" Margin="4,4,4,4" HorizontalOptions="Center"
+          WidthRequest="400">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+            <!--pickup date method-->
+        </Grid.ColumnDefinitions>
+        <DatePicker Format="D" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10,0" BackgroundColor="Goldenrod" />
+        <!--text label on top-->
+        <Grid x:Name="topGrid" Grid.Row="0" Grid.Column="0">
+            <Label Text="TRANSPORT" FontSize="Large" HorizontalOptions="Center" ></Label>
+
+        </Grid>
+        <!--img buttons-->
+        <ImageButton x:Name="gobus" Grid.Row="1" Grid.Column="0" Clicked="Gobus_Clicked" BackgroundColor="DarkBlue" Source="gobus.png" />
+        <ImageButton></ImageButton>
+        <ImageButton x:Name="train" Grid.Row="2" Grid.Column="0" Source="train.png" Clicked="Train_Clicked" BackgroundColor="LemonChiffon"/>
+        <ImageButton></ImageButton>
+        <ImageButton x:Name="taxi" Grid.Row="3" Grid.Column="0" Source="taxi.png" Clicked="Taxi_Clicked"
+                     BackgroundColor="MediumPurple"/>
+        <ImageButton></ImageButton>
+        <ImageButton x:Name="buses" Grid.Row="4" Grid.Column="0" Source="images.png" 
+                     Clicked="Buses_Clicked" BackgroundColor="Orange"/>
+        <ImageButton></ImageButton>
+
+    </Grid>
+
+
+
+
+
+</ContentPage>
